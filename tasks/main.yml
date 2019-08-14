@@ -40,7 +40,6 @@
       --mkhomedir
       --force-join
       --unattended
-      --no-ntp
       --realm={{ idm_realm }}
       --domain={{ idm_domain }}
       --server={{ idm_server }}
