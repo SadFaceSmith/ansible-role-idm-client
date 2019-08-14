@@ -1,0 +1,8 @@
+---
+# vars file for ansible-role-idm-client
+idm_server: idm.example.com
+idm_domain: example.com # lowercase
+idm_realm: EXAMPLE.com # uppercase
+idm_enroll_user: admin
+idm_enroll_password: $PASSWORD
+idm_register_force: yes
