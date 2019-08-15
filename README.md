@@ -2,6 +2,8 @@
 Registers an IPA client with an IdM or IPA server.
 #### Prerequisites
 Client systems require Satellite or Red Hat CDN access to install the `ipa-client` package if it is not already installed.
+
+Note: `rhel-7-server-rpms` repository is required. 
 #### Options
 | parameter             | requried | default | comments
 |-----------------------|----------|---------|---------
