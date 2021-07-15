@@ -9,6 +9,7 @@ Note: `rhel-7-server-rpms` repository is required.
 |-----------------------|----------|---------|---------
 | idm\_server           | yes      |         | The IdM/IPA server to regsiter the IPA client with
 | idm\_domain           | yes      |         | The IdM/IPA domain to register the IPA client with
+| idm\_realm            | yes      |         | The IdM/IPA realm to register the IPA client with
 | idm\_enroll\_user     | yes      |         | The IdM/IPA user to enroll the IPA client with
 | idm\_enroll\_password | yes      |         | The IdM/IPA password to enroll the IPA client with
 | idm\_register\_force  | no       | False   | If `true` and IPA client is already registered it will be unregistered.
