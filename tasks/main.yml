@@ -43,6 +43,4 @@
       --realm={{ idm_realm }}
       --domain={{ idm_domain }}
       --server={{ idm_server }}
-      --password {{ idm_enroll_password }}
-      --principal {{ idm_enroll_user }}
   when: not ipa_client_configured.stat.exists or idm_register_force
