@@ -8,6 +8,14 @@
       - idm_enroll_user is defined
       - idm_enroll_password is defined
 
+- name: IdM | Consclusively find the client hostname
+  command: 'hostname -f'
+  register: fqdn_hostname
+
+- name: print the value of hostname
+  debug:
+   msg: "Hostname is {{ fqdn_hostname }}"
+
 - name: IdM | Register IPA client | Set default | idm_register_force
   set_fact:
     idm_register_force: False
@@ -34,6 +42,7 @@
 - name: IdM | Register IPA client | Register IPA client with IdM
   command: >
     ipa-client-install
+      --hostname={{ fqdn_hostname.stdout }}
       --principal={{  idm_enroll_user  }}
       --password={{ idm_enroll_password }}
       --ssh-trust-dns
